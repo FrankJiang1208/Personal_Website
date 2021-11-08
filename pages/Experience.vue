@@ -10,15 +10,15 @@
 
     <div class="flex space-x-4">
       <div ref="projects" v-for='project in projects' class="w-full opacity-0" style="transform: translateX(30px)">
-        <nuxt-link to="/">
+          <a :href="project.link.url">
           <img
             :src="project.image.url"
             alt="iPhone"
             style="height: 70vh;"
             class="object-cover"
           />
+          </a>
           <p class="text-white font-mono text-sm">{{ project.title }}</p>
-        </nuxt-link>
       </div>
     </div>
   </div>
@@ -34,18 +34,23 @@ export default {
     return {
       projects: [
         {
+          link:{url: 'http://project3-us-job-market-analysis.azurewebsites.net/'},
           image: {
             url: iphoneImg
           },
           title: 'Projects'
         },
         {
+          link:{url: 'https://github.com/FrankJiang1208'},
+         
           image: {
             url: laptopImg
           },
           title: 'Experience'
         },
         {
+          
+          link:{url: 'https://www.linkedin.com/in/shan-jiang-3a221313a'},
           image: {
             url: personImg
           },
