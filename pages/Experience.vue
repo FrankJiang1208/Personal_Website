@@ -34,7 +34,7 @@ export default {
     return {
       projects: [
         {
-          link:{url: 'https://project4job.azurewebsites.net/'},
+          link:{url: 'https://github.com/FrankJiang1208/Job-Market-Analysis/'},
           image: {
             url: iphoneImg
           },
